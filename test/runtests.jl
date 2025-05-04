@@ -1,6 +1,12 @@
 using FinTilsBase
+using InteractiveUtils
 using Test
 
-@testset "FinTilsBase.jl" begin
+# src file tests
+include("src/abstract.test.jl")
+
+@testset "FinTilsBase.jl                                                  " begin
     # Write your tests here.
 end
+
+
