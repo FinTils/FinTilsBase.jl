@@ -1,0 +1,7 @@
+name = "FinTilsBase"
+uuid = "20b8b8ae-5651-4d78-a8e3-e177aef551c4"
+authors = ["C. Naaktgeboren <NaaktgeborenC.PhD@gmail.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1.6.7"
