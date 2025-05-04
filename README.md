@@ -1,17 +1,21 @@
 # FinTilsBase
 
-Base package for my other financial utils packages.
+Base package for other FinTils packages.
+
 
 ## Description
 
-Personal-use package with basic definitions for my other personal-use financial utility
-packages.
+Package with common types and definitions for other FinTils packages.
+
+FinTils packages debut as personal-use financial utility packages.
+
 
 ## Author
 
 C. Naaktgeboren
 
 `NaaktgeborenC <dot!> PhD {at!} gmail [dot!] com`
+
 
 ## License
 
