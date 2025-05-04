@@ -1,3 +1,5 @@
+![FinTilsBase](https://github.com/FinTils/FinTilsBase.jl/blob/main/docs/src/assets/logo-036.png?raw=true)
+
 # FinTilsBase
 
 Base package for other FinTils packages.
