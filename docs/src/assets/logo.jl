@@ -9,7 +9,7 @@ JEΘ = Dict("b" => (0.298, 0.388, 0.682),
            "g" => (0.224, 0.592, 0.275),
            "p" => (0.573, 0.349, 0.639),
            "𝑔" => (0.851, 0.855, 0.792))
-letters = ["B", "\U20A3", "U"]
+letters = ["\U20A3", "\U20AE", "bas"]
 
 const colors = (JEΘ["g"], JEΘ["p"], JEΘ["b"], JEΘ["𝑔"])
 corners = ngon(Point(0, yOFF),
@@ -41,9 +41,9 @@ function main(filename)
         circle(corners[i], (√3/2)*RADIUS, action = :stroke)
         # Draws Letters
         if i < 3
-            drawLetter(letters[i], corners[i], "Alegreya", 1.00)
+            drawLetter(letters[i], corners[i], "Alegreya", 1.15)
         else
-            drawLetter(letters[i], corners[i], "Alegreya", 1.00)
+            drawLetter(letters[i], corners[i], "IMFellDoublePica", 0.75)
         end
     end
     finish()
