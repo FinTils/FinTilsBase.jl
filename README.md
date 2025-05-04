@@ -2,7 +2,9 @@
 
 # FinTilsBase
 
-Base package for other FinTils packages.
+Base package for other FinTils (Financial Utilities) packages.
+
+The current release version is `FinTilsBase-0.1.0`.
 
 
 ## Description
