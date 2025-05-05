@@ -16,3 +16,17 @@ abstract type FINTILS <: Any end
 export FINTILS
 
 
+#--------------------------------------------------------------------------------------------------#
+#                               Second-Level FinTils abstract types                                #
+#--------------------------------------------------------------------------------------------------#
+
+"""
+`abstract type AbstractTokenAmount <: FINTILS end`\n
+Abstract type for all token amount types.
+"""
+abstract type AbstractTokenAmount <: FINTILS end
+
+# export
+export AbstractTokenAmount
+
+
