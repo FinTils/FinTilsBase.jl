@@ -5,8 +5,11 @@
 # Module
 module FinTilsBase
 
-# Includes - abstract supertypes
+# includes - abstract supertypes
 include("abstract.jl")
+
+# include - token amount
+include("tokenAmt.jl")
 
 # Module
 end
