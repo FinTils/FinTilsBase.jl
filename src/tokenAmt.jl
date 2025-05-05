@@ -19,7 +19,7 @@ function numComps(s::AbstractString)::Union{Nothing,Tuple{Bool,Integer,Integer}}
         if length(𝚏) > DEF.decimals
             𝚏, 𝚐 = 𝚏[1:DEF.decimals], 𝚏[DEF.decimals+1:DEF.decimals+1]
             𝚏 = parse(DEF.FixDecTy, 𝚏)
-            if 𝚐 in "56789"
+            if occursin(𝚐, "56789")
                 𝚏 += 1
             end
         else
