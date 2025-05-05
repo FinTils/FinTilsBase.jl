@@ -17,7 +17,7 @@ export FINTILS
 
 
 #--------------------------------------------------------------------------------------------------#
-#                               Second-Level FinTils abstract types                                #
+#                                    AbstractTokenAmount branch                                    #
 #--------------------------------------------------------------------------------------------------#
 
 """
@@ -26,7 +26,13 @@ Abstract type for all token amount types.
 """
 abstract type AbstractTokenAmount <: FINTILS end
 
+"""
+`abstract type PlainAmount <: AbstractTokenAmount end`\n
+Abstract type for all plain (uniform-precision) amount types.
+"""
+abstract type PlainAmount <: AbstractTokenAmount end
+
 # export
-export AbstractTokenAmount
+export AbstractTokenAmount, PlainAmount
 
 
