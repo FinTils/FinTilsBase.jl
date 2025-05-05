@@ -3,11 +3,16 @@
 #--------------------------------------------------------------------------------------------------#
 
 @testset "abstract.test.jl                                                " begin
-    @test isdefined(FinTilsBase, :FINTILS)  # Is it defined in the module?
-    @test isdefined(Main, :FINTILS)         # Is is exported?
-    @test hasdoc(FinTilsBase, :FINTILS)     # Is it documented?
-    @test FINTILS isa Any                   # is placed under Any?
-    @test FINTILS in subtypes(Any)          # directly so?
+    # --- Generalized abstract type tests
+    for 𝑠 in [:FINTILS, :AbstractTokenAmount]
+        @test isdefined(FinTilsBase, 𝑠)         # Is it defined in the module?
+        @test isdefined(Main, 𝑠)                # Is is exported?
+        @test hasdoc(FinTilsBase, 𝑠)            # Is it documented?
+        @test eval(𝑠) isa DataType              # Is it a DataType
+        if 𝑠 == :FINTILS                        @test eval(𝑠) in subtypes(Any)
+        elseif 𝑠 == :AbstractTokenAmount        @test eval(𝑠) in subtypes(FINTILS)  
+        end
+    end
 end
 
 
